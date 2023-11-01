@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: podefirst
+  labels:
+    app: Node
+spec:
+  containers:
+    - name: podefirst
+      image: princyvarunp/test

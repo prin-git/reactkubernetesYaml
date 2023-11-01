@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: podsinglem
+  labels:
+    app: NodeSingle
+spec:
+  containers:
+    - name: podsinglec
+      image: princyvarunp/test

@@ -1,0 +1,19 @@
+kind: ReplicationController
+apiVersion: v1
+metadata:
+  name:  podefirst-rc3
+  labels:
+    app: Node1
+spec:
+  template:
+    metadata:
+     name: podefirst1
+     labels:
+        app: Node
+    spec:
+      containers:
+        - name: podefirst2
+          image: princyvarunp/test
+  replicas: 4
+ 
+ 
